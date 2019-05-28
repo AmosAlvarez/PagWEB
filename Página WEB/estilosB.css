@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    font-size: 16px;
+}
+
+header {
+    width: 100%;
+    height: 500px;
+    background-image: url(FondoB.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+header .textos {
+    margin-top: 152px;
+}
+
+header .titulo {
+    font-size: 65px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-style: oblique;
+    color: #000;
+}
+
+header .subtitulo {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 32px;
+    font-style: oblique;
+}
+
+header .enlaces{
+  z-index: 15;
+}
+
+nav {
+  z-index: 16;
+  position: relative;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+}
+
+.nav1 {
+  background: transparent;
+  height: 80px;
+  color:#fff;
+}
+
+.nav2{
+  z-index: 16;
+  position: fixed;
+  background: #fff;
+  height:100px;
+  color:#000;
+}
+
+.contenedor-nav {
+  display: flex;
+  float: right;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width:500px;
+  height:inherit;
+  overflow: hidden;
+}
+
+nav .enlaces a{
+  z-index: 16;
+  position: relative;
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+
+}
+
+nav .enlaces a:hover{
+  z-index: 16;
+  position: relative;
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+.icono{
+  display: none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+}
+
+/* Main */
+
+.contenedor {
+  margin: auto;
+  padding: 30px 0;
+  width:90%;
+  max-width: 1100px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.texto-biografia{
+  width: 69%;
+  float: left;
+  padding-left: 80px;
+}
+
+.contenedor p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.card {
+  width: 31%;
+  float: left;
+  margin-top: 30px;
+}
+
+.content-card {
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  overflow: hidden;
+  height:400px;
+}
+
+.content-picture img{
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  overflow: hidden;
+}
+
+.foto {
+  width: 100%;
+  height: 100%;
+}
+
+.cuadro {
+  height: 100%;
+}
+
+.texto-serie {
+  height: 20%;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.content-card img {
+  width: 99%;
+  height: 99%;
+  object-fit: cover;
+  float: center;
+}
+
+.parrafo {
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+    color: rgb(24, 16, 16);
+}
+
+main .titulo {
+  font-size: 45px;
+  font-weight: 300;
+
+  margin-bottom: 30px;
+  color: #000;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  padding: 50px;
+  margin-top: 50px;
+  color: #fff;
+  background-color: #2c3e50;
+  text-align: center;
+}
+
+/* Responsive */
+
+@media screen and (max-width:610px) {
+    header .textos {
+        margin-top: 130px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        width: 80%;
+    }
+
+    header .titulo {
+        font-size: 60px;
+    }
+
+    main .titulo {
+      font-size: 45px;
+    }
+
+    .nav2 {
+      z-index: 16;
+      position: fixed;
+      color: #fff;
+    }
+
+    .icono {
+      display: block;
+      cursor: pointer;
+      float: right;
+    }
+
+    .enlaces {
+      z-index: 16;
+      position: fixed;
+      top: 80px;
+      background: #2c3e50;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+    }
+
+    .enlaces a {
+      z-index: 16;
+      position: fixed;
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #34495e;
+      color: #fff;
+      float: left;
+    }
+
+    .texto-biografia{
+          width: 100%;
+          padding: 0px 15px;
+    }
+
+    .card {
+          width: 100%;
+          padding: 0px 15px;
+    }
+
+    .content-card{
+      width: 90%;
+
+      margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    header .textos {
+        margin-top: 100px;
+    }
+    header .titulo {
+        font-size: 60px;
+    }
+    header .subtitulo {
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    main .titulo {
+      font-size: 45px;
+    }
+
+    .content-card{
+      width: 90%;
+      height: 100%;
+      margin-bottom: 50px;
+    }
+}
